@@ -1,16 +1,16 @@
-.posterImage {
-  height: 600px;
-}
-
 .posterImage > img {
   margin: auto;
   display: block;
   width: 100%;
 }
 
+.posterImage {
+  height: 600px;
+}
+
 .posterImage__overlay {
   position: absolute;
-  padding: 5rem;
+  padding: 5rem 5rem 0 5rem;
   bottom: 0px;
   height: 70%;
   display: flex;
@@ -19,6 +19,7 @@
   justify-content: flex-end;
   align-items: flex-start;
   background-image: linear-gradient(rgb(0, 0, 0, 0), rgb(0, 0, 0, 1));
+  background-repeat: no-repeat;
   opacity: 1;
   transition: opacity 0.3s;
 }

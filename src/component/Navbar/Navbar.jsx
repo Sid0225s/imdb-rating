@@ -14,9 +14,9 @@ function Navbar() {
               alt="sd"
             />
           </Link>
-          <Link to="/movies/popular" style={{ textDecoration: "none" }}>
+          {/* <Link to="/movies/popular" style={{ textDecoration: "none" }}>
             <span>Popular</span>
-          </Link>
+          </Link> */}
           <Link to="/movies/top_rated" style={{ textDecoration: "none" }}>
             <span>Top Rated</span>
           </Link>

@@ -34,7 +34,7 @@ function Home() {
       .then((data) => setPopularmovies(data.results));
   });
   return (
-    <div>
+    <div className="">
       <Carousel responsive={responsive}>
         {popularmovies.map((movie) => (
           <Link
