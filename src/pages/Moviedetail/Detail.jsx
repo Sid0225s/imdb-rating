@@ -9,7 +9,7 @@ function Detail() {
   useEffect(() => {
     getData();
     window.scrollTo(0, 0);
-  });
+  }, [id]);
 
   const getData = () => {
     fetch(
@@ -85,7 +85,7 @@ function Detail() {
           </div>
         </div>
       </div>
-      <div className="movie__links">
+      {/* <div className="movie__links">
         <div className="movie__heading">Useful Links</div>
         {currentMovieDetail && currentMovieDetail.homepage && (
           <a
@@ -113,9 +113,9 @@ function Detail() {
             </p>
           </a>
         )}
-      </div>
-      <div className="movie__heading">Production companies</div>
-      <div className="movie__production">
+      </div> */}
+      {/* <div className="movie__heading">Production companies</div> */}
+      {/* <div className="movie__production">
         {currentMovieDetail &&
           currentMovieDetail.production_companies &&
           currentMovieDetail.production_companies.map((company) => (
@@ -127,13 +127,14 @@ function Detail() {
                     src={
                       "https://image.tmdb.org/t/p/original" + company.logo_path
                     }
+                    alt="sahi"
                   />
                   <span>{company.name}</span>
                 </span>
               )}
             </>
           ))}
-      </div>
+      </div> */}
     </div>
   );
 }
